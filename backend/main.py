@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # 상대 경로(.) 대신 절대 경로(app.)를 사용해야 Docker/Uvicorn 환경에서 안전합니다.
 from app.core.database import engine, Base
-from app.api.v1 import journal, ledger, auth  # v1 경로 명시
+from app.api.v1 import journal, ledger, auth, reports  # v1 경로 명시
 from app.core.config import settings
 
 # 1. 서버 시작 시 DB 테이블 자동 생성
