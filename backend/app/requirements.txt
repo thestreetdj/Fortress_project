@@ -1,0 +1,21 @@
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Database (PostgreSQL & ORM)
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Security & Authentication (JWT + Argon2)
+python-jose[cryptography]==3.3.0
+argon2-cffi==23.1.0        # passlib 대체: 보안성이 더 뛰어남
+python-multipart==0.0.6
+
+# Validation & Settings
+pydantic[email]==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Utils
+typing-extensions==4.9.0
